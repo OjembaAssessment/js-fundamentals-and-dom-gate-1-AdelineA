@@ -2,9 +2,7 @@
 
 const highLightedWord = document.getElementById('myParagraph');
 
-const content = paragraph.textContent
-// const words = content.trim().split(/\S+/) ;
-// const wordOccured = {};
+highLightedWord.textContent = 
 const words = words.forEach((word)=>{
     if(wordOccured.hasOwnProperty(word)){
         wordOccured[word]++;
