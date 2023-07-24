@@ -2,12 +2,10 @@
 
 const highLightedWord = document.getElementById('myParagraph');
 
-
-
-const myhighlighter = highLightedWord.textcontent;
-const words = myhighlighter.trim().split(/\S+/) ;
-const wordOccured = {};
-words.forEach((word)=>{
+const content = paragraph.textContent
+// const words = content.trim().split(/\S+/) ;
+// const wordOccured = {};
+const words = words.forEach((word)=>{
     if(wordOccured.hasOwnProperty(word)){
         wordOccured[word]++;
     }else{
@@ -15,10 +13,10 @@ words.forEach((word)=>{
     }
 });
 
-const sortingWords = Object.entries(wordOccured).sort((a,b)=> a[1] - b[1]);
+const sorting = Object.entries(wordOccured).sort((a,b)=> a[1] - b[1]);
 console.log(sortingWords)
 
-const mostOccuringWord = sortingWords.slice(0,5)
+const mostOccuringWord = sorting.slice(0,5)
 if(mostOccuringWord[0] === mostOccuringWord[0].toUpperCase() ){
     console.log(mostOccuringWord)
    mostOccuringWord.innerHtml = `
