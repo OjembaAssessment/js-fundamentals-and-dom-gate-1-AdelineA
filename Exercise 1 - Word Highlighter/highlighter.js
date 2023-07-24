@@ -2,7 +2,7 @@
 
 const highLightedWord = document.getElementById('myParagraph');
 
-highLightedWord.textContent = 
+highLightedWord.textContent = paragraph
 const words = words.forEach((word)=>{
     if(wordOccured.hasOwnProperty(word)){
         wordOccured[word]++;
@@ -12,11 +12,9 @@ const words = words.forEach((word)=>{
 });
 
 const sorting = Object.entries(wordOccured).sort((a,b)=> a[1] - b[1]);
-console.log(sortingWords)
 
 const mostOccuringWord = sorting.slice(0,5)
 if(mostOccuringWord[0] === mostOccuringWord[0].toUpperCase() ){
-    console.log(mostOccuringWord)
    mostOccuringWord.innerHtml = `
    ${mostOccuringWord}
    mostOccuringWord.style = 'line-Through'
